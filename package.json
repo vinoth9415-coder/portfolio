@@ -1,8 +1,7 @@
 {
-  "name": "port2-backend",
+  "name": "vinothkumar-portfolio",
   "version": "1.0.0",
-  "description": "Node.js Express Nodemailer Backend for Vinothkumar V Portfolio Contact Form",
-  "main": "server.js",
+  "description": "Vinothkumar V Personal Portfolio",
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js"

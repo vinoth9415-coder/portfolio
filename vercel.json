@@ -8,10 +8,6 @@
     {
       "source": "/api/send-mail",
       "destination": "/api/send-mail.js"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/server.js"
     }
   ]
 }
