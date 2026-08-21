@@ -734,10 +734,8 @@ function initContactForm() {
     let errorMessage = 'Failed to send email. Please try again or email vinoth9415@gmail.com directly.';
 
     try {
-      // 1. Primary Backend: Node.js Express Nodemailer Server (/send-mail)
-      const backendUrl = window.location.origin.includes('5000') 
-        ? '/send-mail' 
-        : 'http://localhost:5000/send-mail';
+      // 1. Primary Backend: Node.js Express / Vercel Serverless Endpoint (/send-mail)
+      const backendUrl = '/send-mail';
 
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout for SMTP delivery
