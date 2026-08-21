@@ -3,7 +3,15 @@
   "rewrites": [
     {
       "source": "/send-mail",
-      "destination": "/api/send-mail"
+      "destination": "/api/send-mail.js"
+    },
+    {
+      "source": "/api/send-mail",
+      "destination": "/api/send-mail.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/server.js"
     }
   ]
 }

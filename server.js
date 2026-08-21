@@ -136,7 +136,17 @@ const handleSendMail = async (req, res) => {
 app.post('/send-mail', handleSendMail);
 app.post('/api/send-mail', handleSendMail);
 
-// Start Express Server
-app.listen(PORT, () => {
-  console.log(`🚀 Express Mail Server running on http://localhost:${PORT}`);
+// Fallback catch-all route to serve index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
+
+// Export app for Vercel serverless environments
+module.exports = app;
+
+// Start Express Server for local development
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Express Mail Server running on http://localhost:${PORT}`);
+  });
+}
