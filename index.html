@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Vinothkumar V — Full Stack Developer Portfolio</title>
+  <meta name="description"
+    content="Personal Portfolio of Vinothkumar V — Full Stack Developer skilled in Python, Django, Java, React.js, SQL, HTML5, CSS3, JavaScript, Bootstrap, and IoT Robotics." />
+  <meta name="keywords"
+    content="Vinothkumar V, Full Stack Developer, Python Developer, Django Developer, React Developer, Web Developer, Portfolio, Virudhunagar, Tamil Nadu" />
+  <meta name="author" content="Vinothkumar V" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Vinothkumar V — Full Stack Developer Portfolio" />
+  <meta property="og:description"
+    content="Executive personal portfolio of Vinothkumar V showcasing full stack projects, skills, internship, education, certifications, and achievements." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;800&family=Sora:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS (Animate On Scroll) CSS CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Lenis Smooth Scroll CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.9/dist/lenis.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css?v=7" />
+</head>
+
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-logo-wrap">
+      <div class="loader-ring"></div>
+      <div class="loader-logo">VK</div>
+    </div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar" id="loader-bar"></div>
+    </div>
+    <div class="loader-text" id="loader-text">INITIALIZING SYSTEM (0%)</div>
+  </div>
+
+  <!-- ==========================================================================
+       HEADER / TRANSPARENT STICKY NAVBAR (MATCHES SCREENSHOT)
+       ========================================================================== -->
+  <header id="navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- Brand Logo & Status Dot -->
+      <a href="#hero" class="nav-brand">
+        <div class="brand-icon">VK</div>
+        <div class="d-flex flex-column">
+          <span class="brand-title">Vinothkumar <span>V</span></span>
+          <span class="brand-status-tag">
+            <span class="status-dot-green"></span> AVAILABLE FOR HIRE
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Center Capsule Navigation Bar -->
+      <nav class="d-none d-lg-flex align-items-center">
+        <div class="nav-capsule-bar">
+          <a href="#hero" class="nav-capsule-link active">Home</a>
+          <a href="#about" class="nav-capsule-link">About</a>
+          <a href="#skills" class="nav-capsule-link">Skills</a>
+          <a href="#internship" class="nav-capsule-link">Internship</a>
+          <a href="#education" class="nav-capsule-link">Education</a>
+          <a href="#projects" class="nav-capsule-link">Projects</a>
+          <a href="#services" class="nav-capsule-link">Services</a>
+          <a href="#contact" class="nav-capsule-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Action Controls & Hire Button -->
+      <div class="d-none d-sm-flex align-items-center">
+        <a href="#contact" class="btn-hire-pill">HIRE ME</a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-toggle" class="btn text-white d-lg-none border-0 fs-4 p-0">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden d-lg-none bg-dark p-4 border-bottom border-secondary">
+      <div class="d-flex flex-column gap-3">
+        <a href="#hero" class="nav-capsule-link text-white">Home</a>
+        <a href="#about" class="nav-capsule-link text-white">About</a>
+        <a href="#skills" class="nav-capsule-link text-white">Skills</a>
+        <a href="#internship" class="nav-capsule-link text-white">Internship</a>
+        <a href="#education" class="nav-capsule-link text-white">Education</a>
+        <a href="#projects" class="nav-capsule-link text-white">Projects</a>
+        <a href="#services" class="nav-capsule-link text-white">Services</a>
+        <a href="#contact" class="nav-capsule-link text-white">Contact</a>
+        <div class="d-flex gap-3 pt-2">
+          <a href="https://github.com/vinoth9415-coder" target="_blank" rel="noopener noreferrer"
+            class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vinothkumar-v-60b0b5343" target="_blank" rel="noopener noreferrer"
+            class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO / HOME SECTION (1:1 MATCH TO USER SCREENSHOT)
+       ========================================================================== -->
+  <section id="hero">
+    <div id="canvas-container"></div>
+    <div id="tsparticles"></div>
+
+    <div class="container hero-content py-4">
+      <div class="row align-items-center g-4 g-lg-5">
+
+        <!-- Hero Text Column (Left) -->
+        <div class="col-lg-6 text-center text-lg-start">
+
+          <div class="hero-top-badge">
+            <span class="status-dot-green"></span> FULL STACK DEVELOPER • AVAILABLE FOR HIRE
+          </div>
+
+          <div class="hero-title-hi">Hi, I'm</div>
+          <h1 class="hero-title-name">Vinothkumar V</h1>
+
+          <div class="hero-typed-text">
+            I am a <span id="typed-output" class="hero-typed-highlight">Full Stack Developer</span>
+          </div>
+
+          <p class="hero-description">
+            Transforming complex ideas into <strong>elegant full-stack web solutions</strong>, scalable backend
+            architectures, and modern user experiences.
+          </p>
+
+          <!-- Feature Pills Row 1 -->
+          <div class="mb-3 d-flex flex-wrap gap-1 justify-content-center justify-content-lg-start">
+            <span class="hero-feature-pill"><i class="fa-solid fa-bolt"></i> Full-Stack Web Apps</span>
+            <span class="hero-feature-pill"><i class="fa-solid fa-shield-halved"></i> Secure Authentication</span>
+            <span class="hero-feature-pill"><i class="fa-solid fa-bolt"></i> 60 FPS Responsive UI</span>
+            <span class="hero-feature-pill"><i class="fa-solid fa-robot"></i> Hardware & IoT Integration</span>
+          </div>
+
+          <!-- Tech Stack Row 2 -->
+          <div class="mb-4 d-flex flex-wrap align-items-center gap-1 justify-content-center justify-content-lg-start">
+            <span class="stack-row-label">STACK:</span>
+            <span class="stack-pill"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="stack-pill"><i class="fa-solid fa-server"></i> Django</span>
+            <span class="stack-pill"><i class="fa-brands fa-react"></i> React.js</span>
+            <span class="stack-pill"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="stack-pill"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="stack-pill"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+          </div>
+
+          <!-- Action Buttons Row 3 -->
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap mb-4">
+            <a href="assets/Vinothkumar_V_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-cyan-pill">
+              <i class="fa-solid fa-eye me-1"></i> VIEW RESUME
+            </a>
+            <a href="assets/Vinothkumar_V_Resume.pdf" download="Vinothkumar_V_Resume.pdf" onclick="triggerConfetti()"
+              class="btn-outline-pill">
+              <i class="fa-solid fa-file-arrow-down me-1"></i> DOWNLOAD RESUME
+            </a>
+            <a href="#projects" class="btn-outline-pill">
+              <i class="fa-solid fa-diagram-project me-1"></i> PROJECTS
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+            <a href="https://github.com/vinoth9415-coder" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vinothkumar-v-60b0b5343" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:vinoth9415@gmail.com" class="social-icon-btn" title="Email"><i
+                class="fa-solid fa-envelope"></i></a>
+          </div>
+
+        </div>
+
+        <!-- Terminal Window Card (Right) -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="terminal-window-card">
+
+            <div class="terminal-mac-header">
+              <div class="mac-controls">
+                <span class="mac-dot mac-red"></span>
+                <span class="mac-dot mac-yellow"></span>
+                <span class="mac-dot mac-green"></span>
+              </div>
+
+              <div class="terminal-tabs-row">
+                <span class="terminal-tab-item active"><i class="fa-brands fa-python me-1"></i> developer.py</span>
+                <span class="terminal-tab-item">skills.json</span>
+                <span class="terminal-tab-item">contact.ts</span>
+              </div>
+
+              <button class="btn-terminal-run" onclick="alert('Executing developer profile...')"><i
+                  class="fa-solid fa-play me-1"></i> Run</button>
+            </div>
+
+            <div class="terminal-content-box">
+              <pre class="m-0"><code><span class="syn-kw">class</span> <span class="syn-cls">FullStackDeveloper</span>:
+    name = <span class="syn-str">"Vinothkumar V"</span>
+    role = <span class="syn-str">"Full Stack Developer"</span>
+    degree = <span class="syn-str">"B.Tech CSBS @ Ramco Institute"</span>
+    location = <span class="syn-str">"Tamil Nadu, India"</span>
+    status = <span class="syn-str">"Ready to Build & Deploy"</span>
+
+    <span class="syn-kw">def</span> <span class="syn-cls">get_core_stack</span>(self):
+        <span class="syn-kw">return</span> [
+            <span class="syn-str">"Python"</span>, <span class="syn-str">"Django"</span>, <span class="syn-str">"Java"</span>,
+            <span class="syn-str">"React.js"</span>, <span class="syn-str">"SQL"</span>, <span class="syn-str">"Tailwind CSS"</span>
+        ]</code></pre>
+            </div>
+
+            <div class="terminal-status-bar">
+              <span>UTF-8 Python 3.11 Active</span>
+              <span>Ln 14, Col 2</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SIMPLE & PROFESSIONAL ABOUT ME SECTION
+       ========================================================================== -->
+  <section id="about" class="py-5">
+    <div class="container py-5">
+
+      <!-- Section Header -->
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-tag"><i class="fa-solid fa-user me-1"></i> About Me</span>
+        <h2 class="section-heading text-white">Architecting Scalable Web Solutions</h2>
+        <p class="section-desc">Passionate Full Stack Developer & Web Engineer committed to clean code, responsive
+          design, and intuitive user experiences.</p>
+      </div>
+
+      <!-- Main 2-Column Clean Layout -->
+      <div class="row g-4 g-lg-5 align-items-stretch">
+
+        <!-- Left Profile Identity Card -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <!-- Profile Portrait Circular Frame -->
+              <div class="d-flex justify-content-center mb-4">
+                <div class="rounded-circle overflow-hidden border border-2 border-cyan-subtle shadow-lg"
+                  style="width: 250px; height: 250px; background: rgba(30,41,59,0.9); box-shadow: 0 0 30px rgba(6,182,212,0.3);">
+                  <img src="images/profile.png" alt="Vinothkumar V — Full Stack Developer"
+                    class="w-100 h-100 object-fit-cover" />
+                </div>
+              </div>
+
+              <h3 class="h3 text-white font-weight-bold mb-1 text-center">Vinothkumar V</h3>
+              <div class="text-cyan font-weight-semibold mb-3 text-center"><i class="fa-solid fa-code me-1"></i> Full
+                Stack & Web Developer</div>
+
+              <div class="mb-4 text-center">
+                <span
+                  class="badge bg-success bg-opacity-20 border border-success text-emerald px-3 py-2 rounded-pill font-mono">
+                  <span class="status-dot-green me-1"></span> Available for Hiring & Projects
+                </span>
+              </div>
+            </div>
+
+            <!-- Contact Information Chips -->
+            <div class="d-flex flex-column gap-2">
+              <div class="contact-chip-item">
+                <div class="chip-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <div class="text-slate-400 small">Location</div>
+                  <div class="text-white font-weight-semibold small">Virudhunagar, Tamil Nadu, India</div>
+                </div>
+              </div>
+
+              <div class="contact-chip-item">
+                <div class="chip-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="text-slate-400 small">Email Address</div>
+                  <a href="mailto:vinoth9415@gmail.com"
+                    class="text-white text-decoration-none font-weight-semibold small">vinoth9415@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-chip-item">
+                <div class="chip-icon-box"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="text-slate-400 small">Phone Number</div>
+                  <a href="tel:+918015969415" class="text-white text-decoration-none font-weight-semibold small">+91
+                    8015969415</a>
+                </div>
+              </div>
+
+              <div class="contact-chip-item">
+                <div class="chip-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                  <div class="text-slate-400 small">Education</div>
+                  <div class="text-white font-weight-semibold small">B.Tech CSBS @ Ramco Institute (2023–2027)</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Professional Story & Core Highlights -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+
+            <div>
+              <h3 class="h3 text-white font-weight-bold mb-3">Professional Summary</h3>
+
+              <p class="text-slate-300 leading-relaxed fs-6 mb-3">
+                I am a dedicated <strong>Full Stack Developer</strong> currently pursuing my B.Tech in Computer Science
+                and Business Systems (CSBS) at Ramco Institute of Technology, Rajapalayam. Skilled in <strong>Python,
+                  Django, Java, React.js, SQL, HTML5, CSS3, JavaScript, Bootstrap 5, and Git</strong>.
+              </p>
+
+              <p class="text-slate-300 leading-relaxed fs-6 mb-4">
+                My practical engineering experience includes developing full-stack web applications during my internship
+                at <strong>Techvolt Software, Coimbatore</strong> (where I built the Furniture Hub e-commerce platform),
+                designing database schemas, writing RESTful APIs, and building autonomous IoT robotics.
+              </p>
+
+              <!-- Core Highlights Grid -->
+              <h4 class="h6 text-white font-weight-bold mb-3 text-uppercase tracking-wider">Core Strengths &
+                Capabilities</h4>
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6">
+                  <div class="competency-card">
+                    <div class="text-cyan font-weight-bold mb-1"><i class="fa-solid fa-laptop-code me-1"></i> Full-Stack
+                      Web Development</div>
+                    <div class="text-slate-400 small">Building robust Django backends & responsive React.js interfaces.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="competency-card">
+                    <div class="text-cyan font-weight-bold mb-1"><i class="fa-solid fa-database me-1"></i> Database &
+                      RESTful APIs</div>
+                    <div class="text-slate-400 small">Designing relational MySQL databases & secure API endpoints.</div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="competency-card">
+                    <div class="text-cyan font-weight-bold mb-1"><i class="fa-solid fa-paintbrush me-1"></i> Responsive
+                      UI/UX Design</div>
+                    <div class="text-slate-400 small">Crafting clean, accessible layouts with CSS3, Bootstrap 5, &
+                      Tailwind.</div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="competency-card">
+                    <div class="text-cyan font-weight-bold mb-1"><i class="fa-solid fa-microchip me-1"></i> Hardware &
+                      IoT Prototyping</div>
+                    <div class="text-slate-400 small">Integrating Arduino microcontrollers for autonomous robotics.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-3 border-top border-secondary d-flex gap-3 flex-wrap">
+              <a href="assets/Vinothkumar_V_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-cyan-pill">
+                <i class="fa-solid fa-eye me-1"></i> View Resume
+              </a>
+              <a href="assets/Vinothkumar_V_Resume.pdf" download="Vinothkumar_V_Resume.pdf" onclick="triggerConfetti()"
+                class="btn-outline-pill">
+                <i class="fa-solid fa-file-arrow-down me-1"></i> Download Resume
+              </a>
+              <a href="#contact" class="btn-outline-pill">
+                <i class="fa-solid fa-paper-plane me-1"></i> Get In Touch
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SKILLS SECTION (REDESIGNED INTERACTIVE MATRIX)
+       ========================================================================== -->
+  <section id="skills" class="py-5">
+    <div class="container py-5">
+
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-tag"><i class="fa-solid fa-code me-1"></i> Technical Expertise</span>
+        <h2 class="section-heading">Skills & Stack</h2>
+        <p class="section-desc">Interactive filterable matrix of programming languages, frameworks, web technologies,
+          and developer tools.</p>
+      </div>
+
+      <!-- Skill Category Filter Tabs -->
+      <div id="skills-filter-container" class="skill-filter-bar" data-aos="fade-up">
+        <!-- Dynamic Filter Buttons -->
+      </div>
+
+      <!-- Skills Cards Grid -->
+      <div class="row g-4 justify-content-center" id="skills-grid">
+        <!-- Dynamic Interactive Skill Cards -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DEDICATED INTERNSHIP SECTION (SEPARATED)
+       ========================================================================== -->
+  <section id="internship" class="py-5">
+    <div class="container py-5">
+
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-tag"><i class="fa-solid fa-briefcase me-1"></i> Professional Experience</span>
+        <h2 class="section-heading">Internship Experience</h2>
+        <p class="section-desc">Hands-on industry experience building full-stack e-commerce applications and production
+          web features.</p>
+      </div>
+
+      <div id="internship-container">
+        <!-- Dynamic Internship Card -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DEDICATED EDUCATION & STUDIES SECTION (SEPARATED)
+       ========================================================================== -->
+  <section id="education" class="py-5">
+    <div class="container py-5">
+
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-tag"><i class="fa-solid fa-graduation-cap me-1"></i> Academic Background</span>
+        <h2 class="section-heading">Education & Studies</h2>
+        <p class="section-desc">Formal university degree education and higher secondary academic achievements.</p>
+      </div>
+
+      <div class="row g-4" id="education-container">
+        <!-- Dynamic Education Cards -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECTS SECTION
+       ========================================================================== -->
+  <section id="projects" class="py-5">
+    <div class="container py-5">
+
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-tag"><i class="fa-solid fa-diagram-project me-1"></i> Featured Work</span>
+        <h2 class="section-heading">Projects Showcase</h2>
+        <p class="section-desc">Highlights of full-stack web applications, e-commerce platforms, and hardware IoT
+          projects.</p>
+      </div>
+
+      <div class="row g-4" id="projects-grid">
+        <!-- Dynamic Project Cards -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CERTIFICATIONS & ACHIEVEMENTS
+       ========================================================================== -->
+  <section id="certifications" class="py-5">
+    <div class="container py-5">
+
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-tag"><i class="fa-solid fa-award me-1"></i> Credentials</span>
+        <h2 class="section-heading">Certifications & Achievements</h2>
+        <p class="section-desc">Verified industry certifications and competitive hackathon accomplishments.</p>
+      </div>
+
+      <h3 class="h4 text-white font-weight-bold mb-4" data-aos="fade-right"><i
+          class="fa-solid fa-certificate text-cyan me-2"></i> Professional Certifications</h3>
+      <div class="row g-4 mb-5" id="certs-grid">
+        <!-- Dynamic Certifications Cards -->
+      </div>
+
+      <h3 class="h4 text-white font-weight-bold mb-4" data-aos="fade-right"><i
+          class="fa-solid fa-trophy text-cyan me-2"></i> Key Achievements</h3>
+      <div class="row g-4" id="achievements-grid">
+        <!-- Dynamic Achievements Cards -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       STATISTICS COUNTER SECTION
+       ========================================================================== -->
+  <section id="stats" class="py-5">
+    <div class="container py-4">
+      <div class="glass-card p-4 p-md-5" data-aos="zoom-in">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Technologies Mastered</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number">1st</div>
+            <div class="stat-label">Hackathon Winner</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES SECTION
+       ========================================================================== -->
+  <section id="services" class="py-5">
+    <div class="container py-5">
+
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-tag"><i class="fa-solid fa-gears me-1"></i> Capabilities</span>
+        <h2 class="section-heading">Services Offered</h2>
+        <p class="section-desc">High-quality engineering and design services tailored for web and software applications.
+        </p>
+      </div>
+
+      <div class="row g-4" id="services-grid">
+        <!-- Dynamic Services Cards -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RESUME SECTION
+       ========================================================================== -->
+  <section id="resume" class="py-5">
+    <div class="container py-5">
+
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-tag"><i class="fa-solid fa-file-arrow-down me-1"></i> Resume</span>
+        <h2 class="section-heading">Curriculum Vitae</h2>
+        <p class="section-desc">Download or inspect official resume credentials.</p>
+      </div>
+
+      <div id="resume-card-container">
+        <!-- Dynamic Resume Card -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section id="contact" class="py-5">
+    <div class="container py-5">
+
+      <div class="text-center" data-aos="fade-up">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane me-1"></i> Get In Touch</span>
+        <h2 class="section-heading">Let's Connect</h2>
+        <p class="section-desc">Have a project, job opportunity, or collaboration in mind? Feel free to reach out!</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Contact Cards -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="h4 text-white font-weight-bold mb-4">Contact Information</h3>
+
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="brand-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="text-slate-400 small">Direct Email</div>
+                  <a href="mailto:vinoth9415@gmail.com"
+                    class="text-white text-decoration-none font-weight-semibold">vinoth9415@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="brand-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="text-slate-400 small">Phone Number</div>
+                  <a href="tel:+918015969415" class="text-white text-decoration-none font-weight-semibold">+91
+                    8015969415</a>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="brand-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <div class="text-slate-400 small">Location</div>
+                  <span class="text-white font-weight-semibold">Virudhunagar, Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-slate-400 small mb-2">Connect via Socials</div>
+              <div class="d-flex gap-3">
+                <a href="https://github.com/vinoth9415-coder" target="_blank" rel="noopener noreferrer"
+                  class="social-icon-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vinothkumar-v-60b0b5343" target="_blank" rel="noopener noreferrer"
+                  class="social-icon-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                  class="social-icon-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="glass-card p-4 p-md-5 position-relative">
+            <h3 class="h4 text-white font-weight-bold mb-4">Send a Message</h3>
+
+            <!-- Alert Notification Banners -->
+            <div class="alert rounded-4 p-3 mb-4 d-none" id="contact-success-alert" style="background: rgba(16, 185, 129, 0.2) !important; border: 1.5px solid #10B981 !important; color: #10B981 !important; opacity: 1 !important; visibility: visible !important;">
+              <i class="fa-solid fa-circle-check me-2 fs-5 align-middle" style="color: #10B981 !important;"></i>
+              <span style="color: #10B981 !important; font-weight: 600;">Thank you! Your message has been sent successfully. Vinothkumar V will respond shortly!</span>
+            </div>
+
+            <div class="alert rounded-4 p-3 mb-4 d-none" id="contact-error-alert" style="background: rgba(239, 68, 68, 0.2) !important; border: 1.5px solid #EF4444 !important; color: #FCA5A5 !important; opacity: 1 !important; visibility: visible !important;">
+              <i class="fa-solid fa-circle-exclamation me-2 fs-5 align-middle" style="color: #EF4444 !important;"></i>
+              <span id="contact-error-text" style="color: #FCA5A5 !important; font-weight: 600;">Failed to send message. Please try again.</span>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <!-- Honeypot Spam Protection -->
+              <input type="checkbox" name="botcheck" id="botcheck" class="d-none" style="display:none !important;" />
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group mb-3">
+                    <label class="form-label-custom" for="contact-name">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" id="contact-name" class="form-control-custom" placeholder="e.g. John Doe" required />
+                    <div class="text-danger small mt-1 d-none" id="err-name"><i class="fa-solid fa-circle-xmark me-1"></i> Please enter your full name.</div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group mb-3">
+                    <label class="form-label-custom" for="contact-email">Email Address <span class="text-danger">*</span></label>
+                    <input type="email" id="contact-email" class="form-control-custom" placeholder="e.g. john@example.com" required />
+                    <div class="text-danger small mt-1 d-none" id="err-email"><i class="fa-solid fa-circle-xmark me-1"></i> Please enter a valid email address.</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group mb-3">
+                    <label class="form-label-custom" for="contact-subject">Subject <span class="text-danger">*</span></label>
+                    <input type="text" id="contact-subject" class="form-control-custom" placeholder="Project Inquiry / Hiring / Collaboration" required />
+                    <div class="text-danger small mt-1 d-none" id="err-subject"><i class="fa-solid fa-circle-xmark me-1"></i> Please enter a subject.</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group mb-3">
+                    <label class="form-label-custom" for="contact-message">Message <span class="text-danger">*</span></label>
+                    <textarea id="contact-message" rows="4" class="form-control-custom" placeholder="Write your project details or message here..." required></textarea>
+                    <div class="text-danger small mt-1 d-none" id="err-message"><i class="fa-solid fa-circle-xmark me-1"></i> Please enter a message (at least 10 characters).</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" id="contact-submit-btn" class="btn btn-primary-glow w-100 justify-content-center py-3 fs-6 font-weight-bold" style="background: linear-gradient(135deg, #06B6D4, #3B82F6) !important; color: #0F172A !important; font-weight: 800 !important; font-size: 1rem !important; border-radius: 30px !important; border: none !important; box-shadow: 0 8px 25px rgba(6, 182, 212, 0.5) !important; opacity: 1 !important; visibility: visible !important; display: flex !important; align-items: center !important; justify-content: center !important; cursor: pointer !important;">
+                    <i class="fa-solid fa-paper-plane me-2"></i> Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container">
+      <div
+        class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 pb-4 border-bottom border-secondary">
+        <div>
+          <div class="brand-title h4 text-white mb-0">Vinothkumar <span>V</span></div>
+          <div class="text-slate-400 small">Full Stack Developer & Web Engineer</div>
+        </div>
+
+        <div class="d-flex gap-3">
+          <a href="https://github.com/vinoth9415-coder" target="_blank" rel="noopener noreferrer"
+            class="social-icon-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vinothkumar-v-60b0b5343" target="_blank" rel="noopener noreferrer"
+            class="social-icon-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:vinoth9415@gmail.com" class="social-icon-btn" title="Email"><i
+              class="fa-solid fa-envelope"></i></a>
+        </div>
+
+        <button id="back-to-top" class="back-to-top" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+
+      <div class="text-center text-slate-400 small pt-4">
+        &copy; 2026 Vinothkumar V. All rights reserved. Designed & Engineered with Frontend Excellence.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- Portfolio Data & App Scripts -->
+  <script src="js/data.js?v=3"></script>
+  <script src="js/main.js?v=3"></script>
+</body>
+
+</html>
