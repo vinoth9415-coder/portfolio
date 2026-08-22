@@ -22,7 +22,7 @@ const PORTFOLIO_DATA = {
     email: "vinoth9415@gmail.com",
     phone: "+91 8015969415",
     github: "https://github.com/vinoth9415-coder",
-    linkedin: "https://www.linkedin.com/in/vinothkumar-v-60b0b5343",
+    linkedin: "https://www.linkedin.com/in/vinothkumar-v-60b0b5343/",
     portfolioUrl: "https://vinothkumarv.vercel.app",
     stats: [
       { label: "Projects Completed", value: "6+", icon: "fa-rocket" },

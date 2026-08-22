@@ -602,7 +602,7 @@ function renderResumeSection(profile) {
         <a href="https://github.com/vinoth9415-coder" target="_blank" rel="noopener noreferrer" class="btn btn-outline-glow px-4 py-2" style="background: rgba(6, 182, 212, 0.15) !important; border: 1.5px solid #06B6D4 !important; color: #06B6D4 !important; font-weight: 700 !important; border-radius: 30px !important; text-decoration: none !important;">
           <i class="fa-brands fa-github me-2"></i> View GitHub Profile
         </a>
-        <a href="https://www.linkedin.com/in/vinothkumar-v-60b0b5343" target="_blank" rel="noopener noreferrer" class="btn btn-outline-glow px-4 py-2" style="background: rgba(6, 182, 212, 0.15) !important; border: 1.5px solid #06B6D4 !important; color: #06B6D4 !important; font-weight: 700 !important; border-radius: 30px !important; text-decoration: none !important;">
+        <a href="https://www.linkedin.com/in/vinothkumar-v-60b0b5343/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-glow px-4 py-2" style="background: rgba(6, 182, 212, 0.15) !important; border: 1.5px solid #06B6D4 !important; color: #06B6D4 !important; font-weight: 700 !important; border-radius: 30px !important; text-decoration: none !important;">
           <i class="fa-brands fa-linkedin-in me-2"></i> View LinkedIn
         </a>
       </div>
