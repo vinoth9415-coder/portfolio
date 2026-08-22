@@ -765,12 +765,28 @@ function initContactForm() {
         }
       } catch (backendError) {
         clearTimeout(timeoutId);
-        console.warn('Backend server unavailable, attempting Web3Forms/FormSubmit fallback...', backendError);
+        console.warn('Primary endpoint unavailable, trying Netlify function / Web3Forms fallback...', backendError);
 
-        // 2. Fallback Backend: Web3Forms / FormSubmit
+        // 1b. Netlify Function explicit fallback
         try {
-          const accessKey = window.WEB3FORMS_ACCESS_KEY || '86f526f8d416763a63ef497766065762';
-          const w3Res = await fetch('https://api.web3forms.com/submit', {
+          const netlifyRes = await fetch('/.netlify/functions/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({ name: nameVal, email: emailVal, subject: subjectVal, message: messageVal })
+          });
+          const netlifyData = await netlifyRes.json();
+          if (netlifyRes.ok && netlifyData.success) {
+            isSuccess = true;
+          }
+        } catch (nfErr) {
+          console.warn('Netlify function endpoint not responding, trying Web3Forms...', nfErr);
+        }
+
+        if (!isSuccess) {
+          // 2. Fallback Backend: Web3Forms / FormSubmit
+          try {
+            const accessKey = window.WEB3FORMS_ACCESS_KEY || '86f526f8d416763a63ef497766065762';
+            const w3Res = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify({
@@ -807,6 +823,7 @@ function initContactForm() {
           console.error('Fallback email services also failed:', fallbackError);
         }
       }
+    }
 
       if (isSuccess) {
         // On Success: Display success message, clear form, re-enable button, trigger confetti
