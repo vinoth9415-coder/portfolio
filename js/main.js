@@ -593,10 +593,10 @@ function renderResumeSection(profile) {
       <p class="text-slate-400 mb-4">${profile.role} | Full Stack Development & IoT Engineering</p>
       
       <div class="d-flex justify-content-center gap-3 flex-wrap">
-        <a href="assets/Vinothkumar_V_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary-glow px-4 py-2" style="background: linear-gradient(135deg, #06B6D4, #3B82F6) !important; color: #0F172A !important; font-weight: 800 !important; border-radius: 30px !important; text-decoration: none !important;">
+        <a href="/assets/Vinothkumar_V_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary-glow px-4 py-2" style="background: linear-gradient(135deg, #06B6D4, #3B82F6) !important; color: #0F172A !important; font-weight: 800 !important; border-radius: 30px !important; text-decoration: none !important;">
           <i class="fa-solid fa-eye me-2"></i> View Resume PDF
         </a>
-        <a href="assets/Vinothkumar_V_Resume.pdf" download="Vinothkumar_V_Resume.pdf" onclick="triggerConfetti()" class="btn btn-outline-glow px-4 py-2" style="background: rgba(6, 182, 212, 0.15) !important; border: 1.5px solid #06B6D4 !important; color: #06B6D4 !important; font-weight: 700 !important; border-radius: 30px !important; text-decoration: none !important;">
+        <a href="/assets/Vinothkumar_V_Resume.pdf" download="Vinothkumar_V_Resume.pdf" onclick="triggerConfetti()" class="btn btn-outline-glow px-4 py-2" style="background: rgba(6, 182, 212, 0.15) !important; border: 1.5px solid #06B6D4 !important; color: #06B6D4 !important; font-weight: 700 !important; border-radius: 30px !important; text-decoration: none !important;">
           <i class="fa-solid fa-download me-2"></i> Download Resume PDF
         </a>
         <a href="https://github.com/vinoth9415-coder" target="_blank" rel="noopener noreferrer" class="btn btn-outline-glow px-4 py-2" style="background: rgba(6, 182, 212, 0.15) !important; border: 1.5px solid #06B6D4 !important; color: #06B6D4 !important; font-weight: 700 !important; border-radius: 30px !important; text-decoration: none !important;">
@@ -855,7 +855,7 @@ function triggerConfetti() {
 function downloadResumeModal() {
   triggerConfetti();
   const link = document.createElement('a');
-  link.href = 'assets/Vinothkumar_V_Resume.pdf';
+  link.href = '/assets/Vinothkumar_V_Resume.pdf';
   link.download = 'Vinothkumar_V_Resume.pdf';
   link.target = '_blank';
   document.body.appendChild(link);

@@ -23,7 +23,15 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const { name, email, subject, message } = req.body || {};
+    let body = req.body;
+    if (typeof body === 'string') {
+      try {
+        body = JSON.parse(body);
+      } catch (parseErr) {
+        body = {};
+      }
+    }
+    const { name, email, subject, message } = body || {};
 
     // Validate Required Fields
     if (!name || !name.trim() || !email || !email.trim() || !subject || !subject.trim() || !message || !message.trim()) {
